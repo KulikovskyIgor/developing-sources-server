@@ -52,8 +52,8 @@ const config = {
     }
   },
   production: {
-    ip: process.env.IP || undefined,
-    port: process.env.PORT || 8080,
+    ip: 'ds149030.mlab.com',
+    port: '49030',
     mongo: {
       uri: 'mongodb://admin:acer5635@ds149030.mlab.com:49030/developing-sources'
     }
