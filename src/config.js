@@ -37,7 +37,7 @@ const config = {
   },
   test: {
     mongo: {
-      uri: 'mongodb://localhost/rest-test',
+      uri: process.env.MONGODB_URI,
       options: {
         debug: false
       }
@@ -45,7 +45,7 @@ const config = {
   },
   development: {
     mongo: {
-      uri: 'mongodb://admin:acer5635@ds149030.mlab.com:49030/developing-sources',
+      uri: process.env.MONGODB_URI,
       options: {
         debug: true
       }
@@ -53,7 +53,7 @@ const config = {
   },
   production: {
     mongo: {
-      uri: 'mongodb://admin:acer5635@ds149030.mlab.com:49030/developing-sources'
+      uri: process.env.MONGODB_URI
     }
   }
 }
